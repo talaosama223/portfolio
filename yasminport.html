@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmin Amer | BIT Student Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .tab-active { color: #2563eb; border-color: #2563eb; }
+        .tab-inactive { color: #94a3b8; border-color: transparent; }
+        .tab-inactive:hover { color: #475569; }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+    </style>
+</head>
+<body class="bg-white text-[#0f172a] selection:bg-blue-100 selection:text-blue-700 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <span class="text-xl font-black tracking-tight text-[#0f172a]">YASMIN<span class="text-blue-600">AMER</span></span>
+            <div class="hidden md:flex space-x-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">
+                <a href="#about" class="hover:text-blue-600 transition-colors">Intro</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">Activity</a>
+                <a href="#projects" class="hover:text-blue-600 transition-colors">Work</a>
+                <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+            </div>
+            <a href="mailto:ameryasmin37@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-[#0f172a] transition-all active:scale-95 shadow-md">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-48 pb-24 px-6 relative bg-gradient-to-b from-blue-50/50 to-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+            <div class="space-y-8 text-center md:text-left">
+                <div class="inline-flex items-center space-x-2 px-4 py-1.5 bg-white border border-blue-100 text-blue-600 rounded-full shadow-sm text-[10px] font-bold uppercase tracking-widest">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    <span>BIT Student @ PSUT</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black text-[#0f172a] leading-tight tracking-tight">
+                    Building <br /><span class="text-blue-600">Digital Solutions</span> <br />For Business.
+                </h1>
+                <p class="text-lg text-slate-500 max-w-xl leading-relaxed mx-auto md:mx-0">
+                    Aspiring Business Information Technology student at Princess Sumaya University for Technology. 
+                    I focus on using data and systems to solve real-world problems.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center gap-6 pt-4 justify-center md:justify-start">
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com" target="_blank" class="p-3 bg-[#0f172a] text-white rounded-xl hover:bg-blue-600 transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="mailto:ameryasmin37@gmail.com" class="p-3 bg-white border border-slate-200 text-slate-400 rounded-xl hover:text-blue-600 hover:border-blue-200 transition-all">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10Z"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        </a>
+                    </div>
+                    <div class="h-[2px] w-12 bg-slate-100 hidden sm:block"></div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Available for Summer Internship</span>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="w-full aspect-square bg-blue-600/5 border border-blue-100 rounded-[2rem] flex items-center justify-center relative overflow-hidden shadow-inner">
+                   <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_#dbeafe,_transparent)] opacity-50"></div>
+                   <div class="relative z-10 flex flex-col items-center">
+                     <div class="w-24 h-24 bg-white shadow-xl shadow-blue-100 rounded-3xl flex items-center justify-center text-blue-600 mb-6 transform hover:rotate-6 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                     </div>
+                     <span class="text-4xl font-black text-blue-600 opacity-20 select-none tracking-widest">DATA</span>
+                   </div>
+                   <!-- Floating Badges -->
+                   <div class="absolute top-10 right-10 bg-white p-3 rounded-2xl shadow-lg border border-blue-50 animate-float">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+                   </div>
+                   <div class="absolute bottom-10 left-10 bg-[#0f172a] p-3 rounded-2xl shadow-lg animate-float" style="animation-delay: 1.5s;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-20 text-center md:text-left">
+                <h2 class="text-3xl font-black text-[#0f172a] uppercase tracking-tighter">Campus & Leadership</h2>
+                <div class="h-1 w-12 bg-blue-600 mt-4 mx-auto md:mx-0"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-50 p-10 rounded-[2rem] border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="flex items-center justify-between mb-8">
+                        <span class="text-xs font-bold text-blue-600 bg-white px-3 py-1 rounded-full border border-blue-100">2024 — 2025</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600 group-hover:scale-110 transition-transform"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-black text-[#0f172a] mb-2">Team Leader (ICX)</h3>
+                    <p class="text-blue-600 font-bold text-sm mb-6">AIESEC in Jordan</p>
+                    <p class="text-slate-500 text-sm leading-relaxed italic">
+                        Managed a team of 10+ students to coordinate international internships. 
+                        Used the EXPA database platform to track lead conversion and performance scores.
+                    </p>
+                </div>
+
+                <div class="bg-[#0f172a] p-10 rounded-[2rem] text-white group">
+                    <div class="flex items-center justify-between mb-8">
+                        <span class="text-xs font-bold text-slate-400 bg-white/5 px-3 py-1 rounded-full border border-white/10">2023 — Present</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500 group-hover:scale-110 transition-transform"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-2 uppercase tracking-tight">BIT Student</h3>
+                    <p class="text-blue-400 font-bold text-sm mb-6 uppercase tracking-wider">PSUT University</p>
+                    <ul class="text-slate-400 text-sm space-y-4">
+                        <li class="flex items-center space-x-3 italic">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                            <span>Business Intelligence Coursework</span>
+                        </li>
+                        <li class="flex items-center space-x-3 italic">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                            <span>Systems Analysis & Design</span>
+                        </li>
+                        <li class="flex items-center space-x-3 italic">
+                            <div class="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                            <span>E-Commerce Project Management</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section id="projects" class="py-32 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-3xl font-black text-[#0f172a] uppercase tracking-tighter">My Projects</h2>
+                    <div class="flex space-x-6 mt-6">
+                        <button onclick="filterProjects('all')" data-filter="all" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] pb-1 border-b-2 transition-all tab-active">all</button>
+                        <button onclick="filterProjects('data')" data-filter="data" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] pb-1 border-b-2 transition-all tab-inactive">data</button>
+                        <button onclick="filterProjects('business')" data-filter="business" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] pb-1 border-b-2 transition-all tab-inactive">business</button>
+                        <button onclick="filterProjects('development')" data-filter="development" class="filter-btn text-[10px] font-bold uppercase tracking-[0.2em] pb-1 border-b-2 transition-all tab-inactive">development</button>
+                    </div>
+                </div>
+                <div id="project-count" class="text-slate-400 text-xs font-medium uppercase tracking-widest hidden md:block">6 Systems Built</div>
+            </div>
+
+            <div id="project-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="business">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">Custom CRM Tool</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">A tracking system for company prospecting, monitoring leads through statuses like 'Prospected', 'Approached', and 'Meeting Booked'.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">CRM</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Excel</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="data">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">Operations Dashboard</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">Visualized performance metrics for status overviews and product distribution using pie charts and bar graphs.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Data Viz</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">KPIs</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="data">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">Tableau Factory Analytics</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">Analyzed industrial device performance and health across international factory locations to identify operational bottlenecks.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Tableau</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">BI</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="business">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">B2B Follow-up System</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">Automated meeting logs and follow-up sequences to manage hot contacts and maintain partner relationships.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Automation</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">B2B</span>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="data">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">Database Security Project</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">Designed a secure hospital EHR schema using SQL/PL-SQL triggers to prevent unauthorized data access.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">SQL</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Security</span>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card bg-white p-8 rounded-3xl border border-slate-200 hover:shadow-xl hover:shadow-blue-900/5 transition-all group flex flex-col h-full" data-category="development">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3 class="text-lg font-black text-[#0f172a] mb-3 group-hover:text-blue-600 transition-colors uppercase tracking-tight leading-none">Moter Mobile App</h3>
+                    <p class="text-slate-500 text-[13px] leading-relaxed mb-6 flex-grow">Flutter-based mobile application focusing on clean UI and efficient data handling.</p>
+                    <div class="flex flex-wrap gap-2 pt-6 border-t border-slate-50">
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Flutter</span>
+                        <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Dart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-32 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-3xl font-black text-[#0f172a] mb-6 tracking-tighter uppercase">Technical Toolbox</h2>
+                <div class="space-y-6 pt-4">
+                    <!-- Skill 1 -->
+                    <div>
+                        <div class="flex justify-between text-[11px] font-black uppercase tracking-widest mb-2">
+                            <span>SQL & Database Design</span>
+                            <span class="text-blue-600">90%</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-600 rounded-full w-[90%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div>
+                        <div class="flex justify-between text-[11px] font-black uppercase tracking-widest mb-2">
+                            <span>Power BI & Tableau</span>
+                            <span class="text-blue-600">80%</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-600 rounded-full w-[80%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 3 -->
+                    <div>
+                        <div class="flex justify-between text-[11px] font-black uppercase tracking-widest mb-2">
+                            <span>Web Dev (HTML/CSS/JS)</span>
+                            <span class="text-blue-600">85%</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-600 rounded-full w-[85%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                    <!-- Skill 4 -->
+                    <div>
+                        <div class="flex justify-between text-[11px] font-black uppercase tracking-widest mb-2">
+                            <span>Python & Java</span>
+                            <span class="text-blue-600">75%</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-blue-600 rounded-full w-[75%] transition-all duration-1000"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#0f172a] p-12 rounded-[3rem] text-white flex flex-col justify-center shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-600/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl group-hover:bg-blue-600/20 transition-all"></div>
+                <h3 class="text-xl font-bold mb-8 flex items-center gap-2 relative z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-500"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></svg>
+                    Professional Skills
+                </h3>
+                <div class="flex flex-wrap gap-3 relative z-10">
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">Leadership</span>
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">Negotiation</span>
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">Analysis</span>
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">Strategy</span>
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">English</span>
+                    <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs font-bold uppercase tracking-widest text-slate-300">Arabic</span>
+                </div>
+                <div class="mt-10 pt-10 border-t border-white/10 relative z-10">
+                   <p class="text-slate-400 text-sm leading-relaxed italic">
+                     "Passionate about using tech to empower people and create meaningful global impact."
+                   </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-32 px-6 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-5xl font-black text-[#0f172a] tracking-tight mb-8 uppercase">
+                Ready for a <span class="text-blue-600 italic">challenge.</span>
+            </h2>
+            <p class="text-slate-500 mb-12 text-lg">
+                I am currently looking for an internship starting this summer to apply my skills in data and systems.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:ameryasmin37@gmail.com" class="px-8 py-4 bg-blue-600 text-white font-black uppercase tracking-widest hover:bg-[#0f172a] transition-all rounded-xl shadow-lg shadow-blue-200">
+                    Email Me
+                </a>
+                <button class="px-8 py-4 border-2 border-slate-200 text-[#0f172a] font-black uppercase tracking-widest hover:border-blue-600 transition-all rounded-xl flex items-center justify-center space-x-3 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:animate-bounce"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                    <span>Get Resume</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-100 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <span class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">YASMIN AMER © 2025</span>
+            <div class="flex items-center space-x-2 text-[10px] uppercase font-bold tracking-widest text-slate-400">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-600"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>PSUT, Jordan</span>
+            </div>
+            <div class="flex space-x-6 text-slate-300">
+                <a href="#" class="hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="#" class="hover:text-blue-600 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle Scroll - Navbar Styles
+        window.onscroll = function() {
+            const navbar = document.getElementById("navbar");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.classList.add("bg-white/90", "backdrop-blur-md", "border-b", "border-blue-50", "py-3");
+                navbar.classList.remove("bg-transparent", "py-6");
+            } else {
+                navbar.classList.remove("bg-white/90", "backdrop-blur-md", "border-b", "border-blue-50", "py-3");
+                navbar.classList.add("bg-transparent", "py-6");
+            }
+        };
+
+        // Project Filtering
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const btns = document.querySelectorAll('.filter-btn');
+            let visibleCount = 0;
+
+            // Update button styles
+            btns.forEach(btn => {
+                if(btn.getAttribute('data-filter') === category) {
+                    btn.classList.add('tab-active');
+                    btn.classList.remove('tab-inactive');
+                } else {
+                    btn.classList.remove('tab-active');
+                    btn.classList.add('tab-inactive');
+                }
+            });
+
+            // Show/Hide cards
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Update counter text
+            document.getElementById('project-count').innerText = visibleCount + " Systems Built";
+        }
+    </script>
+</body>
+</html>
